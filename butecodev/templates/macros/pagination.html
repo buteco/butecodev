@@ -1,0 +1,19 @@
+{% macro render_pagination(pagination) %}
+<div class="section pt-3 pb-0">
+  <nav aria-label="pagination">
+    <ul class="pagination justify-content-center">
+      {% if pagination.has_prev %}
+      <li class="page-item">
+        <a class="page-link" href="{{ pagination.prev|url }}" tabindex="-1">&laquo; Previous</a>
+      </li>
+      {% endif %}
+
+      {% if pagination.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="{{ pagination.next|url }}" tabindex="-1">Next &raquo;</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>
+{% endmacro %}

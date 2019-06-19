@@ -1,0 +1,2 @@
+lektor
+# this is used only for netlify deployment

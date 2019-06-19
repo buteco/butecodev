@@ -1,0 +1,11 @@
+_template: 404.html
+---
+title: Buteco Dev
+---
+subtitle: oops! 404
+---
+body:
+
+Infelizmente, não encontramos a página requisitada.
+
+=/

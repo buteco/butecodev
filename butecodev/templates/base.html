@@ -1,0 +1,49 @@
+{% from "macros/ga.html" import render_ga_tag %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ this.title  }}{% endblock %}</title>
+    <meta name="description" content="" />
+    <link rel="icon" href="{{ '/static/img/favicon.ico'|url }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ '/static/img/favicon.ico'|url }}" type="image/x-icon" />
+    <meta property="og:image" name="twitter:image" content="">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+    <link href="{{ '/static/css/wandoo.css'| url }}" rel="stylesheet">
+    <link href="{{ '/static/css/custom.css'| url }}" rel="stylesheet">
+    {% if bag('env', 'debug') == 'false' %}
+      {{ render_ga_tag(bag('env', 'ga')) }}
+    {% endif %}
+  </head>
+
+  <body>
+    <header class="bg-primary">
+      <nav class="navbar navbar-expand-md navbar-dark mb-2">
+        <a class="navbar-brand" href="{{ site.get('/')|url }}"><h2>ButecoDev</h2></a>
+    </nav>
+    </header>
+
+    <main role="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer id="footer" class="footer bg-dark text-light py-3">
+      <div class="container">
+        <p class="text-muted text-center mb-0">
+          Made with <a href="https://www.getlektor.com/" target="_blank">Lektor</a> and <span>🍻</span> by <a href="/" target="_blank">ButecoDev</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

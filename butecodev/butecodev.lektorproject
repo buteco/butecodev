@@ -1,0 +1,8 @@
+[project]
+name = butecodev
+url = https://www.butecodev.com.br
+exclude_assets = *~
+url_style = absolute
+
+[packages]
+lektor-minify = 1.2

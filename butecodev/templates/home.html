@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ this.subtitle }}{% endblock %}
+{% block content %}
+<div class="section bg-primary">
+  <div class="container">
+    <div class="row h-100">
+      <div class="col-12">
+        <div class="text-center m-0 vh-100 d-flex flex-column justify-content-center text-light">
+          <h1 class="display-4">{{ this.title }}</h1>
+          <p class="lead font-weight-bold">{{ this.subtitle }}</p>
+          <ul class="list-inline float-right pt-3">
+            {% if bag('social', 'twitter') %}
+            <li class="list-inline-item"><a class="text-white mr-3" rel="nofollow" href="{{ bag('social', 'twitter')|e }}" title="Follow on Twitter"><i class="h1 fa fa-fw fa-twitter fa-2x ion-logo-twitter"></i></a></li>
+            {% endif %}
+            {% if bag('social', 'telegram') %}
+            <li class="list-inline-item"><a class="text-white mr-3" rel="nofollow" href="{{ bag('social', 'telegram')|e }}" title="Join Telegram Group"><i class="h1 fa fa-fw fa-paper-plane fa-2x ion-md-paper-plane"></i></a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
