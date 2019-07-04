@@ -9,7 +9,7 @@
           <h1>{{ this.title }}</h1>
           <p>{{ this.body }}</p>
         </div>
-        <form action="{{ bag('env', 'formsubmit_url') }}" method="POST">
+        <form action="{{ envvars('FORMSUBMIT_URL') }}" method="POST">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-6 pt-3">

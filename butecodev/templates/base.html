@@ -18,8 +18,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
     <link href="{{ '/static/css/wandoo.css'| url }}" rel="stylesheet">
     <link href="{{ '/static/css/custom.css'| url }}" rel="stylesheet">
-    {% if bag('env', 'debug') == 'false' %}
-      {{ render_ga_tag(bag('env', 'ga')) }}
+    {% if envvars('GA') %}
+      {{ render_ga_tag(envvars('GA')) }}
     {% endif %}
   </head>
 
