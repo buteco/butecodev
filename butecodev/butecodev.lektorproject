@@ -6,3 +6,4 @@ url_style = absolute
 
 [packages]
 lektor-minify = 1.2
+lektor-envvars = 18.6.12.4
