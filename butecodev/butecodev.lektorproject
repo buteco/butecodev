@@ -1,6 +1,6 @@
 [project]
 name = butecodev
-url = https://www.butecodev.com.br
+url = https://buteco.dev
 exclude_assets = *~
 url_style = absolute
 
