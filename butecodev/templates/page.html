@@ -1,10 +1,9 @@
 {% extends "base.html" %}
-{% block title %}{{ this.title }}{% endblock %}
 {% block content %}
-<div class="section">
+<section id="intro" class="wrapper style1">
+  <div class="title">{{ this.title }}</div>
   <div class="container">
-    <h2>{{ this.title }}</h2>
     {{ this.body }}
   </div>
-</div>
+</section> 
 {% endblock %}

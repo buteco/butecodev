@@ -1,24 +1,19 @@
 {% extends "base.html" %}
-{% block title %}{{ this.subtitle }}{% endblock %}
 {% block content %}
-<div class="section bg-primary">
+<section id="intro" class="wrapper style1">
+  <div class="title">The Introduction</div>
   <div class="container">
-    <div class="row h-100">
-      <div class="col-12">
-        <div class="text-center m-0 vh-100 d-flex flex-column justify-content-center text-light">
-          <h1 class="display-4">{{ this.title }}</h1>
-          <p class="lead font-weight-bold">{{ this.subtitle }}</p>
-          <ul class="list-inline float-right pt-3">
-            {% if bag('social', 'twitter') %}
-            <li class="list-inline-item"><a class="text-white mr-3" rel="nofollow" href="{{ bag('social', 'twitter')|e }}" title="Follow on Twitter"><i class="h1 fa fa-fw fa-twitter fa-2x ion-logo-twitter"></i></a></li>
-            {% endif %}
-            {% if bag('social', 'telegram') %}
-            <li class="list-inline-item"><a class="text-white mr-3" rel="nofollow" href="{{ bag('social', 'telegram')|e }}" title="Join Telegram Group"><i class="h1 fa fa-fw fa-paper-plane fa-2x ion-md-paper-plane"></i></a></li>
-            {% endif %}
-          </ul>
-        </div>
-      </div>
-    </div>
+    <p class="style1">So in case you were wondering what this is all about ...</p>
+    <p class="style2">
+    Escape Velocity is a free responsive<br class="mobile-hide" />
+    site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+    </p>
+    <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
+    free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
+    your personal or commercial projects &ndash; just be sure to credit us!</p>
+    <ul class="actions">
+      <li><a href="#" class="button style3 large">Proceed</a></li>
+    </ul>
   </div>
-</div>
+</section> 
 {% endblock %}
