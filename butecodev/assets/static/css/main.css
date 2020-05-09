@@ -2228,6 +2228,11 @@ ul.actions.special {
   letter-spacing: 0.075em;
 }
 
+.intro-wrapper {
+  font-size: 1.5em;
+  letter-spacing: 0.075em;
+}
+
 #intro p.style2 {
   font-weight: 700;
   color: #fff;

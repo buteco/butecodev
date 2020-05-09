@@ -1,7 +1,13 @@
 _template: home.html
 ---
-title: Buteco Dev
+title: Buteco Dev - O pé sujo da tecnologia
 ---
-subtitle: O pé sujo da tecnologia
+subtitle: Sobre
 ---
 body:
+
+Um grupo de amigos criado para compartilhar idéias, códigos e conhecimento.
+
+Mas só esticamos o braço pra cerveja mesmo...
+
+Segue a gente!
