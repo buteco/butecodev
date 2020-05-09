@@ -1,5 +1,7 @@
 # ButecoDev
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c3db743-9223-4583-b115-97892368a9ee/deploy-status)](https://app.netlify.com/sites/butecodev/deploys)
+
 Repository for ButecoDev website.
 
 
