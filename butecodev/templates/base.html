@@ -20,6 +20,7 @@
 
         <!-- Logo -->
         <div id="logo">
+          <img src="{{ '/static/img/beers.svg'|url }}" height="150" width="150"/>
           <h1><a href="{{ site.get('/')|url }}">{{ bag('common', 'site_title') }}</a></h1>
           <p>{{ bag('common', 'headline') }}</p>
         </div>
@@ -29,10 +30,11 @@
       {% block content %}{% endblock %}
 
       <section id="footer" class="wrapper">
+        <p class="quote">Quidquid latine dictum sit, altum videtur</p>
         <div id="copyright">
           <ul>
-            <li>&copy; Untitled.</li>
-            <li>Made with: <a href="https://www.getlektor.com">Lektor</a> and <span>🍻</span></li>
+            <li>{{ bag('common', 'copy_range') }} &copy; {{ bag('common', 'site_title') }}</li>
+            <li>Feito com: <a href="https://www.getlektor.com">Lektor</a> e <span>🍻</span></li>
             <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>
