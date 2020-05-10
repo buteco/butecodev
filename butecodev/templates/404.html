@@ -1,9 +1,15 @@
 {% extends "base.html" %}
+{% block title %}{{ this.title }}{% endblock %}
 {% block content %}
 <section id="intro" class="wrapper style1">
-  <div class="title">404</div>
+  <div class="title">{{ this.subtitle }}</div>
   <div class="container">
-    Not found...
+    <div class="intro-wrapper">
+      {{ this.body }}
+    </div>
+    <ul class="actions">
+      <li><a href="{{ site.get('/')|url }}" title="Home" class="button style3 large"><i class="fas fa-beer"></i> Retornar pro Buteco</a></li>
+    </ul>
   </div>
 </section>
 {% endblock %}
