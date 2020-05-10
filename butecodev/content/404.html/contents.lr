@@ -1,8 +1,8 @@
 _template: 404.html
 ---
-title: Buteco Dev
+title: 404
 ---
-subtitle: oops! 404
+subtitle: Oops! 404
 ---
 body:
 
