@@ -25,3 +25,12 @@
     <li><a href="no-sidebar.html">No Sidebar</a></li>
   </ul>
 </nav>
+
+{% block extra_js %}
+    <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/static/js/jquery.dropotron.min.js'|url }}"></script>
+    <script src="{{ '/static/js/browser.min.js'|url }}"></script>
+    <script src="{{ '/static/js/breakpoints.min.js'|url }}"></script>
+    <script src="{{ '/static/js/util.js'|url }}"></script>
+    <script src="{{ '/static/js/main.js'|url }}"></script>
+{% endblock %}

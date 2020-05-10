@@ -2,12 +2,13 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>{% block title %}{{ this.title  }}{% endblock %}</title>
+    <title>{{ bag('common', 'site_title') }} - {% block title %}{{ this.title  }}{% endblock %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="{{ '/static/img/favicon.ico'|url }}" type="image/x-icon" />
     <link rel="shortcut icon" href="{{ '/static/img/favicon.ico'|url }}" type="image/x-icon" />
     <link rel="stylesheet" href="{{ '/static/css/main.css'|url }}" />
+    {% block extra_css %}{% endblock %}
     {% if envvars('GA') %}
       {{ render_ga_tag(envvars('GA')) }}
     {% endif %}
@@ -15,16 +16,12 @@
   <body class="homepage is-preload">
     <div id="page-wrapper">
 
-      <!-- Header -->
       <section id="header" class="wrapper">
-
-        <!-- Logo -->
         <div id="logo">
           <img src="{{ '/static/img/beers.svg'|url }}" height="150" width="150"/>
           <h1><a href="{{ site.get('/')|url }}">{{ bag('common', 'site_title') }}</a></h1>
           <p>{{ bag('common', 'headline') }}</p>
         </div>
-
       </section>
 
       {% block content %}{% endblock %}
@@ -42,13 +39,6 @@
 
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
-    <script src="{{ '/static/js/jquery.dropotron.min.js'|url }}"></script>
-    <script src="{{ '/static/js/browser.min.js'|url }}"></script>
-    <script src="{{ '/static/js/breakpoints.min.js'|url }}"></script>
-    <script src="{{ '/static/js/util.js'|url }}"></script>
-    <script src="{{ '/static/js/main.js'|url }}"></script>
-
+    {% block extra_js %}{% endblock %}
   </body>
 </html>
