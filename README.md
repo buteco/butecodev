@@ -1,9 +1,6 @@
 # ButecoDev
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1c3db743-9223-4583-b115-97892368a9ee/deploy-status)](https://app.netlify.com/sites/butecodev/deploys)
-
 Repository for [ButecoDev website](https://buteco.dev).
-
 
 ## Development
 
@@ -13,7 +10,7 @@ Repository for [ButecoDev website](https://buteco.dev).
 
 ### Setup
 
-* Create a virtualenv using your prefered method, and install `pip-tools`.
+* Create a virtualenv using your prefered method, and install pip-tools with `pip install pip-tools`.
 * Install dependencies: `make install-dev`
 * Set environment variables as defined in `env.example`
 * To build the project: `make build`
@@ -23,3 +20,8 @@ Repository for [ButecoDev website](https://buteco.dev).
 ### Deployment
 
 All changes in `production` branch are deployed automatically.
+
+Production build runs on Python 3.11.5.
+
+Reference:
+ - https://developers.cloudflare.com/pages/platform/language-support-and-tools/
