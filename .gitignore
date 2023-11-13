@@ -66,3 +66,6 @@ target/
 # environment
 .env
 .venv
+venv
+
+.tool-versions
